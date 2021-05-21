@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/registration.css">
+    <link href="https://fonts.googleapis.com/css?family=Cute+Font|Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>   
+        <img class = container src="img/lc.png" alt="lehman logo">
+        <nav>
+            <ul>
+                <li><a href="index.html"><strong>Home</strong></a></li>
+                <li><a href="registration.html"><strong>Registration</strong> </a></li>
+                <li><a href="contactus.html"><strong>Contact Us</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container1">
+        <h2>Conference Register Form</h2>
+        <div id="formErrors">
+            error
+        </div>
+        <form>
+            <div class="form_input">
+                <label>Full Name</label>
+                <input type="text" id="fullName" name="fullName">
+            </div>
+            <div class="form_input">
+                <label>Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form_input">
+                <label>Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form_input form_inputLast">
+                <label>Confirm Password</label>
+                <input type="password" id="passwordConfirm" name="passwordConfirm">
+            </div>
+
+            <div class="form_input">
+                <label>Phone Number:</label> <br>
+                <input type="tel" name="phone" id="phone" placeholder="Please enter it on the following format xxx-xxx-xxxx"> <br>
+            </div>
+
+            <div class="form_input">
+                <label>Organization/University:</label> <br>
+                <input type="text" name="organization" id="organization" placeholder="Please enter your organization"> <br>
+            </div>
+            
+            <div class="form_input">
+                <label>Country:</label> <br>
+                <input type="text" name="country" id="country" placeholder="Please enter a Country name"> <br>
+            </div>
+            
+
+            <div id="radio group" class="form_input">
+                <label>Registration Type: (Select type)*</label> <br>
+                <input type="radio" name="newuserType" value="Author" onclick="radioHandler(this);">
+                <label>Author ($400)</label> <br>
+                <input type="radio" name="newuserType" value="Participant" onclick="radioHandler(this);">
+                <label>Participant ($300)</label> <br>
+                <input type="radio" name="newuserType" value="Student" onclick="radioHandler(this);">
+                <label>Student ($100)</label> <br>
+            </div>
+            
+            <div id="discount-field" class="form_input">
+                <label>Discount code:</label> <br>
+                <input type="text" name="promotionalCode" id="promotionalCode" placeholder="Please enter your Discount Code"> <br>
+            </div>
+
+            <div id="totalAmount" class="form_input">
+                <p id="amount"></p>
+            </div>
+
+            <div class="form_submit">
+                <input type="submit" id="submit" name="submit" value="Register">
+            </div>
+        </form>
+    </div> 
+    
+    <!-- START FOOTER SECTION -->
+
+<footer>
+    <p>
+        Lehman College 1st International Conference in Cloud Computing.
+    </p>
+    <p>15-16 July 2021</p>
+    <p>Bronx, NY</p>
+
+    <p>
+      &copy; Created for
+      <a href="#" target="_blank"
+        >Bryan Brugal <i class="fab fa-free-code-camp"></i
+      ></a>
+    </p>
+  </footer>
+  
+  <!-- END FOOTER SECTION -->
+</body>
+<script src="js/registration.js"></script>
+</html>

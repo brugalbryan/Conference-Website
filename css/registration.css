@@ -1,0 +1,164 @@
+/* Custom properties/variables  */
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #af2436;
+  --main-blue: #465986;
+  --main-gray: #393e46;
+}
+
+*{
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+
+html,body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Cute Font', cursive;
+  font-family: 'Playfair Display', serif;
+  background-color: rgb(146, 81, 81);
+}
+
+header{
+  width: 100%;
+  /* height: 0px auto; */
+  /* padding: 38px; */
+  box-sizing: border-box;
+  /* display: flex;
+  justify-content: flex-end;
+  position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #064420
+
+}
+.container {
+  width: 200px;
+  height: 50px;
+}
+
+/* Resize images */
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+nav{
+  float: right;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li{
+  list-style: none;
+  
+}
+
+nav ul li a{
+  display: block;
+  margin: 0px 0;
+  padding: 0px 20px;
+  color: aliceblue;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.myImg{
+  max-width: 100%;
+  height: 200px;
+  margin-top: 20px;
+}
+
+
+.container1{
+  width: 400px;
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: deepskyblue;
+}
+.container1 > h2{
+  text-align: center;
+}
+.form_input{
+  margin-bottom: 10px;
+}
+.form_input > label{
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.form_input > input{
+  display: block;
+  border: 1px solid #aaa;
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  padding-left: 5px;
+  font-size: 16px;
+  outline: none;
+}
+.form_inputLast{
+  margin-bottom: 15px;
+}
+.form_submit > input{
+  border: 1px solid dodgerblue;
+  outline: none;
+  padding: 8px 30px;
+  font-size: 14px;
+  cursor: pointer;
+  background: white;
+  transition: 0.2s;
+}
+.form_submit > input:hover{
+  background: dodgerblue;
+  color: white;
+}
+#formErrors{
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid red;
+  background: white;
+  color: red;
+  padding: 5px;
+  display: none;
+}
+.display_error{
+  display: block !important;
+}
+.input_invalid{
+  border: 2px solid red !important;
+}
+
+
+/* Footer */
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: var(--main-gray);
+  border-top: 4px solid var(--main-red);
+}
+
+footer > p {
+  margin: 2rem;
+}
+
+footer i {
+  vertical-align: middle;
+}
+
+@media (max-width: 28.75em) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
